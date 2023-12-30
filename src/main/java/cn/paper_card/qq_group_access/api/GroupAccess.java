@@ -14,6 +14,8 @@ public interface GroupAccess {
 
     void sendAtMessage(long qq, @NotNull String message) throws Exception;
 
+    void sendAtMessage(@NotNull List<Long> qqs, @NotNull String message) throws Exception;
+
     void setMute(long qq, int seconds) throws Exception;
 
     @NotNull List<GroupMember> getAllMembers() throws Exception;
