@@ -1,6 +1,7 @@
 package cn.paper_card.qq_group_access.api;
 
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
@@ -21,7 +22,7 @@ public interface GroupAccess {
 
     void setMute(long qq, int seconds) throws Exception;
 
-    @NotNull GroupMember getMember(long qq) throws Exception;
+    @Nullable GroupMember getMember(long qq) throws Exception;
 
     @NotNull List<GroupMember> getAllMembers() throws Exception;
 }
