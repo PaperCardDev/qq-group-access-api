@@ -7,11 +7,13 @@ public interface GroupMember {
 
     String getNick(); // 昵称
 
+    String getNameCard(); // 群名片
+
+    String getSpecialTitle(); // 群头衔
+
     int getJoinTime(); // 入群时间
 
     int getActiveLevel(); // 活跃等级
-
-    String getSpecialTitle(); // 群头衔
 
     int getPermissionLevel(); // 权限等级
 
